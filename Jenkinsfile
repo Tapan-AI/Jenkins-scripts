@@ -12,8 +12,9 @@ pipeline {
 
     stages {
         stage( 'run another script') {
-            sh sh "chmod +x -R ${env.WORKSPACE}"
-            sh './first-script.sh'
+            steps { 
+                sh './first-script.sh'
+            }    
         }
     }
 }
