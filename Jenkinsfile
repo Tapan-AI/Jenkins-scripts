@@ -8,9 +8,6 @@ pipeline {
                 sh './helloworld.sh'
             }
         }
-    }
-
-    stages {
         stage( 'run another script') {
             steps { 
                 sh './first-script.sh'
